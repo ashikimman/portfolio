@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+.error-message p {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    margin-top: 10px;
+}
+body {
+    display: flex;
+    height: 100%; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column;
+    animation: fadeIn 1s ease-in-out forwards;
+    background-color: #4b79a1;
+}
+
+.image1 {
+    width: 200px;
+    margin-left: 90px;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+form {
+    background-color: rgb(45, 77, 104);
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
+    width: 100%;
+    max-width: 400px;
+    background:linear-gradient(135deg,#4b79a1,#283e51);
+
+}
+
+.form-container {
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    width: 100px;
+    padding: 5px;
+    margin-left: 160px;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: #c9c6c6;
+    font-size: larger;
+    background:linear-gradient(135deg,#4b79a1,#283e51);
+
+}
+button:hover {
+    background-color: #3ce4c8;
+}
+p {
+    color:  #ffffff;
+    text-align: center;
+}
+a {
+    color: #67b4f8;
+}
+h2 {
+    position: relative;
+    max-width:fit-content;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background:linear-gradient(135deg,#4b79a1,#283e51);
+
+
+    padding: 15px;
+    border-radius:6px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #aba8a8;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+.password {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #aba8a8;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+.passwordbox {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #aba8a8;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+label {
+    font-family: 'Poppins', sans-serif;
+}

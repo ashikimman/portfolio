@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Techneat</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/icons8-form-50.png">
+</head>
+<body>
+    <h1 class="titlename">Sign Up</h1>
+    <form id="myForm" method="post" action="../controllers/save_data.php">
+        <fieldset>
+            <legend style="color: aliceblue;">Personal Information</legend>
+            <div>
+                <label for="firstName"></label>
+                <input type="text" placeholder="Enter your First name" id="firstName" name="firstName" >
+                <span class="error-message" id="firstNameError"></span>
+            </div>
+            <div>
+                <label for="lastName"></label>
+                <input type="text" placeholder="Enter your Last name" id="lastName" name="lastName" >
+                <span class="error-message" id="lastNameError"></span>
+            </div>
+            <div>
+                <label for="address"></label>
+                <input type="text" placeholder="Enter your Address" id="address" name="address" maxlength="80" >
+                <span class="error-message" id="addressError"></span>
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend style="color: aliceblue;">Contact Information</legend>
+            <div>
+                <label for="phoneNumber"></label>
+                <input type="text" placeholder="Enter your Phone Number" id="phoneNumber" name="phoneNumber" >
+                <span class="error-message" id="phoneNumberError"></span>
+            </div>
+            <div>
+                <label for="email"></label>
+                <input type="email" placeholder="Enter your Email ID" id="email" name="email" >
+                <span class="error-message" id="emailError"></span>
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend style="color: aliceblue;">Account Details</legend>
+            <div>
+                <label for="username"></label>
+                <input type="text" placeholder="Pick a Username" id="username" name="username" >
+                <span class="error-message" id="usernameError"></span>
+            </div>
+            <div style="position: relative;">
+                <label for="password"></label>
+                <input type="password" placeholder="Enter a strong password" id="password" name="password" class="passwordbox">
+                <span class="error-message" id="passwordError"></span>
+                <span class="toggle-password" onclick="togglePasswordVisibility('password')">&#128065;</span>
+            </div>
+            <div style="position: relative;">
+                <label for="confirmPassword"></label>
+                <input type="password" placeholder="Confirm Password" id="confirmPassword" name="confirmPassword" class="passwordbox">
+                <span class="error-message" id="confirmPasswordError"></span>
+                <span class="toggle-password" onclick="togglePasswordVisibility('confirmPassword')">&#128065;</span>
+            </div>
+        </fieldset>
+        <div id="formError" style="display:none; color:rgb(238, 175, 175); font-size:14px; margin-top:15px;"></div>
+
+        
+        <div class="button-group">
+            <button type="submit" class="submit-btn">Submit</button>
+            <button type="reset" class="reset-btn">Reset</button>
+        </div>
+    </form>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
